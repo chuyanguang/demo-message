@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mq
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /ems
+#    手动ack
+#    listener:
+#      direct:
+#        acknowledge-mode: manual
+server:
+  port: 8002
