@@ -22,4 +22,9 @@ class DemoMessageApplicationTests {
         rabbitTemplate.convertAndSend("hello", "hello rabbitmq");
     }
 
+    @Test
+    void test02(){
+        rabbitTemplate.convertAndSend("hello", "user.info","hello rabbitmq1");
+    }
+
 }
